@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Products</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+padding:0;
+}
+
+/* header */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#111;
+color:white;
+padding:15px;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+margin:10px;
+text-decoration:none;
+}
+
+/* title */
+
+.title{
+text-align:center;
+margin-top:20px;
+}
+
+/* product grid */
+
+.product-grid{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+padding:20px;
+}
+
+.product{
+border:1px solid #ddd;
+padding:10px;
+border-radius:8px;
+width:220px;
+text-align:center;
+}
+
+/* same image size */
+
+.product img{
+width:200px;
+height:150px;
+object-fit:cover;
+border-radius:8px;
+}
+
+/* rating */
+
+.rating{
+color:orange;
+margin:5px 0;
+}
+
+/* button */
+
+.btn{
+display:inline-block;
+margin-top:8px;
+padding:8px 15px;
+background:#111;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+.btn:hover{
+background:#333;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">⚡ Electro Mart</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="categories.html">Categories</a>
+<a href="cart.html">Cart</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+</header>
+
+
+<h2 class="title">Our Electronics Products</h2>
+
+
+<div class="product-grid">
+
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8">
+<h3>Laptop</h3>
+<div class="rating">⭐⭐⭐⭐☆</div>
+<p>₹75000</p>
+<button class="btn" onclick="addToCart('Laptop',75000)">Add To Cart</button>
+</div>
+
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1611078489935-0cb964de46d6">
+<h3>Gaming Laptop</h3>
+<div class="rating">⭐⭐⭐⭐☆</div>
+<p>₹95000</p>
+<button class="btn" onclick="addToCart('Gaming Laptop',95000)">Add To Cart</button>
+</div>
+
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+<h3>Student Laptop</h3>
+<div class="rating">⭐⭐⭐⭐☆</div>
+<p>₹45000</p>
+<button class="btn" onclick="addToCart('Student Laptop',45000)">Add To Cart</button>
+</div>
+
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853">
+<h3>Business Laptop</h3>
+<div class="rating">⭐⭐⭐⭐☆</div>
+<p>₹65000</p>
+<button class="btn" onclick="addToCart('Business Laptop',65000)">Add To Cart</button>
+</div>
+
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9">
+<h3>Smartphone</h3>
+<div class="rating">⭐⭐⭐⭐☆</div>
+<p>₹20000</p>
+<button class="btn" onclick="addToCart('Smartphone',20000)">Add To Cart</button>
+</div>
+
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97">
+<h3>Android Phone</h3>
+<div class="rating">⭐⭐⭐⭐☆</div>
+<p>₹18000</p>
+<button class="btn" onclick="addToCart('Android Phone',18000)">Add To Cart</button>
+</div>
+
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf">
+<h3>5G Smartphone</h3>
+<div class="rating">⭐⭐⭐⭐☆</div>
+<p>₹25000</p>
+<button class="btn" onclick="addToCart('5G Smartphone',25000)">Add To Cart</button>
+</div>
+
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1">
+<h3>Smart TV</h3>
+<div class="rating">⭐⭐⭐⭐☆</div>
+<p>₹45000</p>
+<button class="btn" onclick="addToCart('Smart TV',45000)">Add To Cart</button>
+</div>
+
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1577979749830-f1d742b96791">
+<h3>4K Smart TV</h3>
+<div class="rating">⭐⭐⭐⭐☆</div>
+<p>₹55000</p>
+<button class="btn" onclick="addToCart('4K Smart TV',55000)">Add To Cart</button>
+</div>
+
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12">
+<h3>Smart Watch</h3>
+<div class="rating">⭐⭐⭐⭐☆</div>
+<p>₹5000</p>
+<button class="btn" onclick="addToCart('Smart Watch',5000)">Add To Cart</button>
+</div>
+
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a">
+<h3>Fitness Smart Watch</h3>
+<div class="rating">⭐⭐⭐⭐☆</div>
+<p>₹7000</p>
+<button class="btn" onclick="addToCart('Fitness Smart Watch',7000)">Add To Cart</button>
+</div>
+
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df">
+<h3>Earbuds</h3>
+<div class="rating">⭐⭐⭐⭐☆</div>
+<p>₹3000</p>
+<button class="btn" onclick="addToCart('Earbuds',3000)">Add To Cart</button>
+</div>
+
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46">
+<h3>Wireless Earbuds</h3>
+<div class="rating">⭐⭐⭐⭐☆</div>
+<p>₹4000</p>
+<button class="btn" onclick="addToCart('Wireless Earbuds',4000)">Add To Cart</button>
+</div>
+
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db">
+<h3>PS5</h3>
+<div class="rating">⭐⭐⭐⭐☆</div>
+<p>₹50000</p>
+<button class="btn" onclick="addToCart('PS5',50000)">Add To Cart</button>
+</div>
+
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1618384887929-16ec33fab9ef">
+<h3>Gaming Keyboard</h3>
+<div class="rating">⭐⭐⭐⭐☆</div>
+<p>₹2500</p>
+<button class="btn" onclick="addToCart('Gaming Keyboard',2500)">Add To Cart</button>
+</div>
+
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1545454675-3531b543be5d">
+<h3>Sound Speakers</h3>
+<div class="rating">⭐⭐⭐⭐☆</div>
+<p>₹3500</p>
+<button class="btn" onclick="addToCart('Sound Speakers',3500)">Add To Cart</button>
+</div>
+
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c">
+<h3>Gaming PC</h3>
+<div class="rating">⭐⭐⭐⭐☆</div>
+<p>₹120000</p>
+<button class="btn" onclick="addToCart('Gaming PC',120000)">Add To Cart</button>
+</div>
+
+
+</div>
+
+
+<script>
+
+function addToCart(name,price){
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+cart.push({
+name:name,
+price:price
+});
+
+localStorage.setItem("cart", JSON.stringify(cart));
+
+alert(name + " added to cart");
+
+}
+
+</script>
+
+
+</body>
+
+</html>
